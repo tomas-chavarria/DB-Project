@@ -495,12 +495,9 @@ def save_changes():
     conn.commit()
 
 
-# IMPLEMENTED
 # Closes the cursor and connection.
 def close_connection():
     if cur:
-            cur.close()
-            print("Cursor closed.")
+        cur.close()
     if conn:
         conn.close()
-        print("Connection closed.")
